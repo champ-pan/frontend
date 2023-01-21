@@ -54,44 +54,58 @@ const CreateForm = () => {
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridEmail">
               <Form.Label value="id">ID</Form.Label>
+              <div className='container'>
               <input onChange={(e) => handle(e)} id="id" value={data.id} type="id" placeholder="Enter ID" />
+              </div>
             </Form.Group>
     
             <Form.Group as={Col} controlId="formGridPassword">
               <Form.Label value="name">Name</Form.Label>
+              <div>
               <input onChange={(e) => handle(e)} id="name" value={data.name} type="name" placeholder="Enter Name" />
+              </div>
             </Form.Group>
           </Row>
     
           <Form.Group className="mb-3" controlId="formGridAddress1">
             <Form.Label value="id_artists">Artists ID</Form.Label>
+            <div>
             <input onChange={(e) => handle(e)} id="id_artists" value={data.id_artists} placeholder="Enter Artists ID" />
+            </div>
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formGridAddress1">
             <Form.Label value="artists">Artists</Form.Label>
+            <div>
             <input onChange={(e) => handle(e)} id="artists" value={data.artists} placeholder="Enter Artists" />
+            </div>
           </Form.Group>
     
           <Row className="mb-3">
             <Form.Group as={Col} controlId="formGridCity">
               <Form.Label value="popularity">Popularity</Form.Label>
+              <div>
               <input onChange={(e) => handle(e)} id = "popularity" value={data.popularity} placeholder="Enter Popularity"/>
+              </div>
             </Form.Group>
     
             <Form.Group as={Col} controlId="formGridState">
               <Form.Label value="duration">Duration</Form.Label>
+              <div>
               <input onChange={(e) => handle(e)} id = "duration" value={data.duration} placeholder="Enter Duration"/>
+              </div>
             </Form.Group>
     
             <Form.Group as={Col} controlId="formGridZip">
               <Form.Label value='release_date'>Release Date</Form.Label>
+              <div>
               <DataPicker
                 se
                 onChange={(e) => handle(e)}
                 className="form-control"
                 minDate={new Date()}
               />
+              </div>
             </Form.Group>
           </Row>
           
